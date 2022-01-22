@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import gradientShape7 from './shapes/17.png'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React by adding things here
-        </a>
-      </header>
+      <Navbar></Navbar>
+      <h1 className='titleText'>
+        <span className='titleMarquee'>Creative Developer</span> Web Designer Problem Solver
+      </h1>
+      {/* <h1>Jordan is a fullstack developer specializing in intuitive design and effective system architecture</h1> */}
+
+      <img className='gradientShape' src={gradientShape7} alt='gradient shape circle'/>
+
+
     </div>
   );
 }

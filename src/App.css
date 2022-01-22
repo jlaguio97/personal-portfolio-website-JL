@@ -1,10 +1,13 @@
 .App {
   text-align: center;
+  display: grid;
+  font-family: 'VarentGrotesk-Bold';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'varent';
+  src: url(../../../Library/Fonts/VarentGrotesk-Bold.otf)
+  formal('opentype');
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,20 +16,81 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBarHeader {
+  background-color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  padding-left:5rem;
+  padding-right: 5rem;
+  /* background-color: whitesmoke; */
+  font-size:small;
+  border: 4px solid white;
 }
 
-.App-link {
-  color: #61dafb;
+.titleText {
+  border: 4px solid rgb(252, 250, 250);
+  padding-top: 5rem;
+  margin: 15px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 5rem;
+  font-size: 9rem;
+  text-align: left;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  color:rgb(243, 243, 243);
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+  /* position: relative;
+  -webkit-animation: scrolling-left1 20s linear infinite;
+  animation: scrolling-left1 20s linear infinite; */
 }
+
+.titleMarquee {
+  position: relative;
+  -webkit-animation: scrolling-left1 20s linear infinite;
+  animation: scrolling-left1 20s linear infinite;
+}
+
+@keyframes scrolling-left1 {
+  0% {transform: translateX(100%);
+      -webkit-transform: translateX(100%);}
+    100% {transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);}
+}
+
+.gradientShape {
+  height: 50rem;
+  width: 90rem;
+  transform: skewY(-25deg);
+  padding-left: 10rem;
+  padding-top: 10rem;
+  z-index: -5;
+  position: absolute;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+html {
+  background: url(./gradients/17.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 
 @keyframes App-logo-spin {
   from {

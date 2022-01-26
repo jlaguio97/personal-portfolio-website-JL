@@ -1,19 +1,81 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import gradientShape7 from './shapes/17.png'
+import "./App.css";
+import Navbar from "./components/Navbar";
+import gradientShape7 from "./shapes/17.png";
+import gradientShape3 from './shapes/14.png'
+import gradientShape23 from './shapes/20.png'
+import About from "./components/About";
+import Work from "./components/Work";
+import arrow from './shapes/arrow.png'
 
 function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <h1 className='titleText'>
-        <span className='titleMarquee'>Creative Developer</span> Web Designer Problem Solver
+      <h1 className="titleText">
+        <div className="titleMarquee2">Creative Developer</div>
+        <div className="titleMarquee2">Web Designer</div>
+        <div className="titleMarquee2">Problem Solver</div>
+
+        <div className='spinAndPersonal'>
+
+        <div id="container">
+        <div id="circle">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            width="300px"
+            height="300px"
+            viewBox="0 0 300 300"
+            enable-background="new 0 0 300 300"
+            xmlSpace="preserve"
+          >
+            <defs>
+              <path
+                id="circlePath"
+                d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+              />
+            </defs>
+            <circle cx="150" cy="100" r="75" fill="none" />
+            <g>
+              <use xlinkHref="#circlePath" fill="none" />
+              <text fill="#000">
+                <textPath xlinkHref="#circlePath">
+                  contact contact contact contact contact contact
+                </textPath>
+              </text>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <h6 className="personal">
+          Hello, I'm a fullstack web developer based in New York City, with a
+          love for UI/UX design.
+        </h6>
+      </div>
+
+
       </h1>
       {/* <h1>Jordan is a fullstack developer specializing in intuitive design and effective system architecture</h1> */}
 
-      <img className='gradientShape' src={gradientShape7} alt='gradient shape circle'/>
-
-
+      <img
+        className="gradientShape"
+        src={gradientShape7}
+        alt="gradient shape circle"
+      />
+      <img className='gradientShape2'
+      src={gradientShape23}
+      alt='gradient shape circle' />
+      <img className='gradientShape3' src={gradientShape3} alt='gradient shape circle'></img>
+      <img className='arrow' src={arrow} alt='arrow'></img>
+      <img className='arrow2' src={arrow} alt='arrow'></img>
+      {/* <img className ='contactWheel' src={contactWheel} alt='spinning graphic'
+      /> */}
+      <Work></Work>
+      <About></About>
     </div>
   );
 }

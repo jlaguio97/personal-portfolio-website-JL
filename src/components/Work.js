@@ -2,9 +2,11 @@ import React from "react";
 import xymeDemo from '../shapes/xymeDemo.png'
 import goopDemo from '../shapes/goopDemo.png'
 import santaFliesDemo from '../shapes/santaFliesDemo.png'
+import Fade from 'react-reveal/Fade'
 
 const Work = () => (
   <div className="workPageParentContainer">
+    <Fade bottom>
     <h1 className='projectsTitle' style={{fontSize:'10.5rem'}}> Personal Projects: </h1>
     <div className="projectsBox">
       <div className="xymeContainer">
@@ -24,6 +26,7 @@ const Work = () => (
         <h4 style={{fontWeight:'lighter'}}>A simple game using JQuery with a festive touch. The game is a flappy-bird clone reskinned as Santa. It uses local storange to save the high score and the user can play the game as many times as they want.</h4>
       </div>
     </div>
+    </Fade>
   </div>
 );
 

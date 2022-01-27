@@ -7,6 +7,9 @@ import About from "./components/About";
 import Work from "./components/Work";
 import arrow from "./shapes/arrow.png";
 import FadeIn from "react-fade-in/lib/FadeIn";
+import "animate.css";
+// import ScrollAnimation from "react-animate-on-scroll";
+import Fade from 'react-reveal/Fade'
 
 function App() {
   return (
@@ -14,49 +17,49 @@ function App() {
       <Navbar></Navbar>
 
       <h1 className="titleText">
-        <FadeIn delay={850} transitionDuration={900}>
+        <FadeIn delay={850} transitionDuration={850}>
           <div className="titleMarquee2">Creative Developer</div>
           <div className="titleMarquee2">Web Designer</div>
           <div className="titleMarquee2">Problem Solver</div>
 
-        <div className="spinAndPersonal">
-          <div id="container">
-            <div id="circle">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                width="300px"
-                height="300px"
-                viewBox="0 0 300 300"
-                enable-background="new 0 0 300 300"
-                xmlSpace="preserve"
-              >
-                <defs>
-                  <path
-                    id="circlePath"
-                    d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
-                  />
-                </defs>
-                <circle cx="150" cy="100" r="75" fill="none" />
-                <g>
-                  <use xlinkHref="#circlePath" fill="none" />
-                  <text fill="#000">
-                    <textPath xlinkHref="#circlePath">
-                      contact contact contact contact contact contact
-                    </textPath>
-                  </text>
-                </g>
-              </svg>
+          <div className="spinAndPersonal">
+            <div id="container">
+              <div id="circle">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="300px"
+                  height="300px"
+                  viewBox="0 0 300 300"
+                  enable-background="new 0 0 300 300"
+                  xmlSpace="preserve"
+                >
+                  <defs>
+                    <path
+                      id="circlePath"
+                      d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+                    />
+                  </defs>
+                  <circle cx="150" cy="100" r="75" fill="none" />
+                  <g>
+                    <use xlinkHref="#circlePath" fill="none" />
+                    <text fill="#000">
+                      <textPath xlinkHref="#circlePath">
+                        contact contact contact contact contact contact
+                      </textPath>
+                    </text>
+                  </g>
+                </svg>
+              </div>
             </div>
+            <h6 className="personal">
+              Hello, I'm a fullstack web developer based in New York City, with
+              a love for UI/UX design.
+            </h6>
           </div>
-          <h6 className="personal">
-            Hello, I'm a fullstack web developer based in New York City, with a
-            love for UI/UX design.
-          </h6>
-        </div>
         </FadeIn>
       </h1>
       {/* <h1>Jordan is a fullstack developer specializing in intuitive design and effective system architecture</h1> */}
@@ -66,6 +69,7 @@ function App() {
         src={gradientShape7}
         alt="gradient shape circle"
       />
+
       <img
         className="gradientShape2"
         src={gradientShape23}
@@ -80,7 +84,13 @@ function App() {
       <img className="arrow2" src={arrow} alt="arrow"></img>
       {/* <img className ='contactWheel' src={contactWheel} alt='spinning graphic'
       /> */}
+
+
+
       <Work></Work>
+
+
+
       <About></About>
     </div>
   );

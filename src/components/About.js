@@ -2,23 +2,28 @@ import React from "react";
 import selfie from "../shapes/selfie.jpg";
 import 'animate.css'
 // import ScrollAnimation from "react-animate-on-scroll";
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 import 'animate.css'
-import Fade from 'react-reveal/Fade'
+// import Fade from 'react-reveal/Fade'
 
 const About = () => (
   <div className="aboutPageHeader">
     <div>
-      <Fade left>
+      <AnimationOnScroll animateIn='animate__fadeInLeft' animateOut='animate__fadeOutLeft' delay={600}>
       <h1 className="aboutPageTitle" style={{ fontSize: "10.5rem" }}>
         A little bit about myself...
       </h1>
-      </Fade>
-
-      <Fade bottom>
+      </AnimationOnScroll>
+      {/* <AnimationOnScroll animateIn="animate__bounceIn" animateOut='fadeOut' delay={200}>
+  <h2>Some Text</h2>
+</AnimationOnScroll> */}
+      <AnimationOnScroll animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp' delay={700}>
       <p className='aboutMyself' style={{fontSize: '15pt'}}>I'm Jordan, a 24 year old software engineer currently living in New York City. I have a strong love for fashion, visual art, and travel. Prior to my transition into tech, I was a fashion stylist. When I'm not shopping or behind a computer I'm probably taking long strolls in the city or loitering at coffee shops with my friends.</p>
-      </Fade>
+      </AnimationOnScroll>
     </div>
-    <img src={selfie} alt="me on a roof"></img>
+    <AnimationOnScroll animateIn='animate__fadeInRight' animateOut='animate__fadeOutRight'>
+    <img src={selfie} alt="me on a roof" className='selfie'></img>
+    </AnimationOnScroll>
   </div>
 );
 

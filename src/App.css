@@ -136,7 +136,7 @@ div.santaFliesContainer > img {
   flex-direction: row;
 }
 
-div.aboutPageHeader > img {
+.selfie {
   height: 50rem;
   width: 35rem;
   padding: 55px;

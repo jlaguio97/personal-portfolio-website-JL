@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
 const ContactForm = () => {
@@ -13,7 +13,7 @@ const ContactForm = () => {
   } = useForm();
 
   const toastifySuccess = () => {
-    toast("Form sent!", {
+    toast("Jordan will read your email soon!", {
       position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: true,
@@ -50,7 +50,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="ContactForm">
+    <div className="ContactForm" id="contact">
       <div className="container">
         <div className="row">
           <div className="col-12 text-center">
@@ -153,6 +153,7 @@ const ContactForm = () => {
                   Submit
                 </button>
               </form>
+              <ToastContainer />
             </div>
           </div>
         </div>

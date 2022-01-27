@@ -8,7 +8,6 @@ const Work = () => (
   <div className="workPageParentContainer" id='work'>
     <AnimationOnScroll
       animateIn="animate__fadeIn"
-      animateOut="animate__fadeOutDown"
       delay={150}
     >
       <h1 className="projectsTitle" style={{ fontSize: "10.5rem" }}>

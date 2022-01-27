@@ -5,10 +5,11 @@ import gradientShape3 from "./shapes/14.png";
 import gradientShape23 from "./shapes/20.png";
 import About from "./components/About";
 import Work from "./components/Work";
-import Contact from './components/Contact'
+import Contact from "./components/Contact";
 import arrow from "./shapes/arrow.png";
 import FadeIn from "react-fade-in/lib/FadeIn";
 import "animate.css";
+import { Link } from "react-scroll";
 
 function App() {
   return (
@@ -23,36 +24,38 @@ function App() {
 
           <div className="spinAndPersonal">
             <div id="container">
-              <div id="circle">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                  x="0px"
-                  y="0px"
-                  width="300px"
-                  height="300px"
-                  viewBox="0 0 300 300"
-                  enable-background="new 0 0 300 300"
-                  xmlSpace="preserve"
-                >
-                  <defs>
-                    <path
-                      id="circlePath"
-                      d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
-                    />
-                  </defs>
-                  <circle cx="150" cy="100" r="75" fill="none" />
-                  <g>
-                    <use xlinkHref="#circlePath" fill="none" />
-                    <text fill="#000">
-                      <textPath xlinkHref="#circlePath">
-                        contact contact contact contact contact contact
-                      </textPath>
-                    </text>
-                  </g>
-                </svg>
-              </div>
+              <Link to="contact" smooth={true} duration={1300}>
+                <div id="circle">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="300px"
+                    height="300px"
+                    viewBox="0 0 300 300"
+                    enable-background="new 0 0 300 300"
+                    xmlSpace="preserve"
+                  >
+                    <defs>
+                      <path
+                        id="circlePath"
+                        d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+                      />
+                    </defs>
+                    <circle cx="150" cy="100" r="75" fill="none" />
+                    <g>
+                      <use xlinkHref="#circlePath" fill="none" />
+                      <text fill="#000">
+                        <textPath xlinkHref="#circlePath">
+                          contact contact contact contact contact contact
+                        </textPath>
+                      </text>
+                    </g>
+                  </svg>
+                </div>
+              </Link>
             </div>
             <h6 className="personal">
               Hello, I'm a fullstack web developer based in New York City, with

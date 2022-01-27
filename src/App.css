@@ -23,7 +23,7 @@
   font-size: 16px;
   font-weight: bold;
   font-family: Krona-One;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   display: flex;
   flex-direction: row;
   padding-left: 5rem;

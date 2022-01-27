@@ -9,7 +9,7 @@ import 'animate.css'
 const About = () => (
   <div className="aboutPageHeader">
     <div>
-      <AnimationOnScroll animateIn='animate__fadeInLeft' animateOut='animate__fadeOutLeft' delay={600}>
+      <AnimationOnScroll animateIn='animate__fadeInLeft' animateOut='animate__fadeOutLeft' delay={400}>
       <h1 className="aboutPageTitle" style={{ fontSize: "10.5rem" }}>
         A little bit about myself...
       </h1>
@@ -17,8 +17,8 @@ const About = () => (
       {/* <AnimationOnScroll animateIn="animate__bounceIn" animateOut='fadeOut' delay={200}>
   <h2>Some Text</h2>
 </AnimationOnScroll> */}
-      <AnimationOnScroll animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp' delay={700}>
-      <p className='aboutMyself' style={{fontSize: '15pt'}}>I'm Jordan, a 24 year old software engineer currently living in New York City. I have a strong love for fashion, visual art, and travel. Prior to my transition into tech, I was a fashion stylist. When I'm not shopping or behind a computer I'm probably taking long strolls in the city or loitering at coffee shops with my friends.</p>
+      <AnimationOnScroll animateIn='animate__fadeInUp' animateOut='animate__fadeOutUp' delay={500}>
+      <p className='aboutMyself' style={{fontSize: '15pt'}}>I'm Jordan, a 24 year old software engineer currently living in New York City. I have a strong love for fashion, visual art, and travel. Prior to my transition into tech, I was a stylist at Marni. When I'm not shopping or behind a computer I'm probably taking long strolls in the city or loitering at coffee shops with my friends.</p>
       </AnimationOnScroll>
     </div>
     <AnimationOnScroll animateIn='animate__fadeInRight' animateOut='animate__fadeOutRight'>

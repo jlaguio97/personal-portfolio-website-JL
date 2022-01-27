@@ -7,7 +7,7 @@ import { AnimationOnScroll} from 'react-animation-on-scroll'
 
 const Work = () => (
       <div className="workPageParentContainer">
-        <AnimationOnScroll animateIn='animate__fadeInRight' animateOut='animate__fadeOutDown' delay={300}>
+        <AnimationOnScroll animateIn='animate__fadeIn' animateOut='animate__fadeOutDown' delay={150}>
           <h1 className="projectsTitle" style={{ fontSize: "10.5rem" }}>
             Personal Projects:
           </h1>

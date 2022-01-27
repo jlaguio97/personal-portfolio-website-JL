@@ -8,8 +8,6 @@ import Work from "./components/Work";
 import arrow from "./shapes/arrow.png";
 import FadeIn from "react-fade-in/lib/FadeIn";
 import "animate.css";
-// import ScrollAnimation from "react-animate-on-scroll";
-import Fade from 'react-reveal/Fade'
 
 function App() {
   return (
@@ -62,7 +60,6 @@ function App() {
           </div>
         </FadeIn>
       </h1>
-      {/* <h1>Jordan is a fullstack developer specializing in intuitive design and effective system architecture</h1> */}
 
       <img
         className="gradientShape"
@@ -82,14 +79,8 @@ function App() {
       ></img>
       <img className="arrow" src={arrow} alt="arrow"></img>
       <img className="arrow2" src={arrow} alt="arrow"></img>
-      {/* <img className ='contactWheel' src={contactWheel} alt='spinning graphic'
-      /> */}
-
-
 
       <Work></Work>
-
-
 
       <About></About>
     </div>

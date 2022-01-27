@@ -1,21 +1,22 @@
 import React from "react";
-//import {Link} from 'react-router-dom'
 
-
+import { Link } from "react-scroll";
 
 const Navbar = () => (
   <div className="navBarHeader">
-    <h3 className='navBarText'>Jordan Laguio</h3>
+    <h3 className="navBarText">Jordan Laguio</h3>
     <hr />
-      <div className="nav">
-        <h3 className='navBarText'>Work</h3>
-      </div>
-      <hr />
-    <h3 className='navBarText'>About</h3>
+    <div className="nav">
+      <Link to="work" smooth={true} duration={1000}>
+        <h3 className="navBarText">Work</h3>
+      </Link>
+    </div>
+    <hr />
 
+    <Link to="about" smooth={true} duration={900}>
+      <h3 className="navBarText">About</h3>
+    </Link>
   </div>
 );
 
-
-
-export default (Navbar);
+export default Navbar;

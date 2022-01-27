@@ -7,15 +7,18 @@ const Navbar = () => (
     <h3 className="navBarText">Jordan Laguio</h3>
     <hr />
     <div className="nav">
-      <Link to="work" smooth={true} duration={1000}>
+      <Link to="work" smooth={true} duration={1000} offset={100}>
         <h3 className="navBarText">Work</h3>
       </Link>
     </div>
     <hr />
 
-    <Link to="about" smooth={true} duration={900}>
+    <Link to="about" smooth={true} duration={1000}>
       <h3 className="navBarText">About</h3>
     </Link>
+
+
+
   </div>
 );
 

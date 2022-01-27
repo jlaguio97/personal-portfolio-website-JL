@@ -5,6 +5,7 @@ import gradientShape3 from "./shapes/14.png";
 import gradientShape23 from "./shapes/20.png";
 import About from "./components/About";
 import Work from "./components/Work";
+import Contact from './components/Contact'
 import arrow from "./shapes/arrow.png";
 import FadeIn from "react-fade-in/lib/FadeIn";
 import "animate.css";
@@ -83,6 +84,8 @@ function App() {
       <Work></Work>
 
       <About></About>
+
+      <Contact></Contact>
     </div>
   );
 }

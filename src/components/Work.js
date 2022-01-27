@@ -16,7 +16,7 @@ const Work = () => (
       </h1>
     </AnimationOnScroll>
     <div className="projectsBox">
-      <AnimationOnScroll animateIn="animate__fadeInUp" delay={600}>
+      <AnimationOnScroll animateIn="animate__fadeInUp" delay={400}>
         <div className="xymeContainer">
           <img
             src={xymeDemo}
@@ -35,7 +35,7 @@ const Work = () => (
           </h4>
         </div>
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn="animate__fadeInUp" delay={700}>
+      <AnimationOnScroll animateIn="animate__fadeInUp" delay={600}>
         <div className="goopMenContainer">
           <img
             src={goopDemo}

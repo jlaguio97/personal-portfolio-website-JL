@@ -5,14 +5,27 @@ import gradientShape3 from "./shapes/14.png";
 import gradientShape23 from "./shapes/20.png";
 import About from "./components/About";
 import Work from "./components/Work";
+import LoadingScreen from "./components/LoadingScreen";
 import arrow from "./shapes/arrow.png";
 import FadeIn from "react-fade-in/lib/FadeIn";
 import "animate.css";
 import { Link } from "react-scroll";
+import { useEffect, useState } from "react";
+
 
 function App() {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false, 6000))
+  }, [])
+
   return (
+    <>
+    {loading === false ? (
     <div className="App">
+
+
       <Navbar></Navbar>
 
       <h1 className="titleText">
@@ -90,16 +103,14 @@ function App() {
         alt="gradient shape circle"
       ></img>
 
-      {/* <Link to="about" smooth={true} duration={1000}>
-        <img className="arrow2" src={arrow} alt="arrow"></img>
-      </Link> */}
-
       <Work></Work>
 
       <About></About>
-
-      {/* <Contact></Contact> */}
     </div>
+    ) : (
+      <LoadingScreen />
+    )}
+    </>
   );
 }
 

@@ -13,7 +13,7 @@ const Navbar = () => (
     </div>
     <hr />
 
-    <Link to="about" smooth={true} duration={1000}>
+    <Link to="about" smooth={true} duration={1000} offset={85}>
       <h3 className="navBarText">About</h3>
     </Link>
 

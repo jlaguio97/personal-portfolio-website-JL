@@ -21,7 +21,11 @@ const Work = () => (
             src={xymeDemo}
             alt="desktop computer with XYME health app on screen"
           ></img>
-          <h1>XYME</h1>
+
+          <a href='https://fsa-xyme.herokuapp.com/' target='_blank' rel='noreferrer'>
+          <h1>XYME</h1></a>
+
+
           <h4 style={{ fontWeight: "lighter" }}>
             A mobile web-application that keeps a digital wallet of your
             medications. With xyme you can read about vital drug interactions to
@@ -40,7 +44,11 @@ const Work = () => (
             src={goopDemo}
             alt="homepage interface for shopping website"
           ></img>
-          <h1>GOOP for Men</h1>
+
+<a href='https://mm-grace-shopper.herokuapp.com/home' target='_blank' rel='noreferrer'>
+          <h1>GOOP for Men</h1> </a>
+
+
           <h4 style={{ fontWeight: "lighter" }}>
             Goop is a modern lifestyle brand, for the modern man. A luxurious
             e-commerce website just for men.
@@ -50,7 +58,9 @@ const Work = () => (
       <AnimationOnScroll animateIn="animate__fadeInUp" delay={800}>
         <div className="santaFliesContainer">
           <img src={santaFliesDemo} alt="demo screen for Santa Flies"></img>
-          <h1>Santa Flies!</h1>
+
+          <a href='https://santa-flies.herokuapp.com ' target='_blank' rel='noreferrer'>
+          <h1>Santa Flies!</h1> </a>
           <h4 style={{ fontWeight: "lighter" }}>
             A simple game using JQuery with a festive touch. The game is a
             flappy-bird clone reskinned as Santa. It uses local storange to save

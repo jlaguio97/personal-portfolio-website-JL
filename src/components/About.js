@@ -4,9 +4,8 @@ import "animate.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
 
-
 const About = () => (
-  <div className="aboutPageHeader" id='about'>
+  <div className="aboutPageHeader" id="about">
     <div>
       <AnimationOnScroll
         animateIn="animate__fadeInLeft"
@@ -36,6 +35,19 @@ const About = () => (
       animateOut="animate__fadeOutRight"
     >
       <img src={selfie} alt="me on a roof" className="selfie"></img>
+      <div className="socialLinks">
+          <a href="https://www.linkedin.com/in/jordan-laguio" target='_blank' rel='noreferrer'>
+            <span style={{ paddingRight: "3rem" }}>LinkedIn</span>
+          </a>
+
+          <a href="https://github.com/jlaguio97" target='_blank' rel="noreferrer">
+            <span style={{ paddingRight: '3rem'}}>GitHub</span>{" "}
+          </a>
+          <a href='mailto:jordan.laguio@gmail.com' target='_blank' rel='noreferrer'>
+
+            <span>Email</span>
+          </a>
+      </div>
     </AnimationOnScroll>
   </div>
 );

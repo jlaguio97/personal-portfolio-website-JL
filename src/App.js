@@ -5,7 +5,6 @@ import gradientShape3 from "./shapes/14.png";
 import gradientShape23 from "./shapes/20.png";
 import About from "./components/About";
 import Work from "./components/Work";
-import Contact from "./components/Contact";
 import arrow from "./shapes/arrow.png";
 import FadeIn from "react-fade-in/lib/FadeIn";
 import "animate.css";
@@ -24,8 +23,9 @@ function App() {
 
           <div className="spinAndPersonal">
             <div id="container">
-              <Link to="contact" smooth={true} duration={1300}>
-                <div id="circle">
+              {/* <Link to="contact" smooth={true} duration={1300}> */}
+              <div id="circle">
+                <a href="mailto:jordan.laguio@gmail.com">
                   <svg
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -54,8 +54,9 @@ function App() {
                       </text>
                     </g>
                   </svg>
-                </div>
-              </Link>
+                </a>
+              </div>
+              {/* </Link> */}
             </div>
             <h6 className="personal">
               Hello, I'm a fullstack web developer based in New York City, with
@@ -81,14 +82,19 @@ function App() {
         src={gradientShape3}
         alt="gradient shape circle"
       ></img>
-      <img className="arrow" src={arrow} alt="arrow"></img>
-      <img className="arrow2" src={arrow} alt="arrow"></img>
+
+      <Link to="work" smooth={true} duration={1000} offset={100}>
+        <img className="arrow" src={arrow} alt="arrow"></img>{" "}
+      </Link>
+      <Link to="about" smooth={true} duration={1000}>
+        <img className="arrow2" src={arrow} alt="arrow"></img>
+      </Link>
 
       <Work></Work>
 
       <About></About>
 
-      <Contact></Contact>
+      {/* <Contact></Contact> */}
     </div>
   );
 }

@@ -139,6 +139,7 @@ div.santaFliesContainer > img {
   height: 50rem;
   width: 35rem;
   padding: 55px;
+  padding-bottom: 0px;
 }
 
 .aboutMyself {
@@ -148,6 +149,25 @@ div.santaFliesContainer > img {
   font-family: Krona-One;
   font-weight: lighter;
   text-align: justify;
+}
+
+.socialLinks {
+  margin: 0;
+  font-size: 2rem;
+  padding: 0;
+   padding-left: 4rem;
+  color: black
+}
+
+div.projectsBox * a, div.socialLinks > a {
+  font-family: Krona-One;
+  text-decoration: none;
+  color: inherit
+}
+
+a, div.socialLinks > a:hover {
+  font-style: underline;
+  color: whitesmoke;
 }
 
 .goopMenContainer {

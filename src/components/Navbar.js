@@ -13,7 +13,7 @@ const Navbar = () => (
     </div>
     <hr />
 
-    <Link to="about" smooth={true} duration={1000} offset={85} className='hover-underline-animation'>
+    <Link to="about" smooth={true} duration={1000} offset={-50} className='hover-underline-animation'>
       <h3 className="navBarText" style={{paddingRight:'2rem'}}>About</h3>
     </Link>
 

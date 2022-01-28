@@ -11,20 +11,24 @@ import FadeIn from "react-fade-in/lib/FadeIn";
 import "animate.css";
 import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 
 function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => setLoading(false, 6000))
+    setTimeout(() => setLoading(false), 6000)
   }, [])
 
   return (
     <>
     {loading === false ? (
-    <div className="App">
 
+    <div className="App">
+<AnimationOnScroll
+      animateIn='animate__fadeIn'
+      delay={200}>
 
       <Navbar></Navbar>
 
@@ -85,7 +89,7 @@ function App() {
           </div>
         </FadeIn>
       </h1>
-
+      </AnimationOnScroll>
       <img
         className="gradientShape"
         src={gradientShape7}
@@ -107,8 +111,14 @@ function App() {
 
       <About></About>
     </div>
+
     ) : (
+      <AnimationOnScroll
+      animateIn = 'animate__fadeIn'
+      aniamteOut='animate__fadeOut'
+      delay={100}>
       <LoadingScreen />
+      </AnimationOnScroll>
     )}
     </>
   );

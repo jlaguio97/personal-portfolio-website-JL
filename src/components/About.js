@@ -12,7 +12,7 @@ const About = () => (
         animateOut="animate__fadeOutLeft"
         delay={400}
       >
-        <h1 className="aboutPageTitle" style={{ fontSize: "10.5rem" }}>
+        <h1 className="aboutPageTitle" style={{ fontSize: "120%" }}>
           A little bit about myself...
         </h1>
       </AnimationOnScroll>
@@ -37,11 +37,11 @@ const About = () => (
       <img src={selfie} alt="me on a roof" className="selfie"></img>
       <div className="socialLinks">
           <a href="https://www.linkedin.com/in/jordan-laguio" target='_blank' rel='noreferrer' className='hover-underline-animation'>
-            <span style={{ paddingRight: "3rem" }}>LinkedIn</span>
+            <span style={{ paddingRight: "2vw" }}>LinkedIn</span>
           </a>
 
           <a href="https://github.com/jlaguio97" target='_blank' rel="noreferrer" className='hover-underline-animation'>
-            <span style={{ paddingRight: '3rem'}}>GitHub</span>{" "}
+            <span style={{ paddingRight: '2vw'}}>GitHub</span>{" "}
           </a>
           <a href='mailto:jordan.laguio@gmail.com' target='_blank' rel='noreferrer' className='hover-underline-animation'>
 

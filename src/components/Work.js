@@ -10,7 +10,7 @@ const Work = () => (
       animateIn="animate__fadeIn"
       delay={150}
     >
-      <h1 className="projectsTitle" style={{ fontSize: "10.5rem" }}>
+      <h1 className="projectsTitle" style={{ fontSize: "10.5vw" }}>
         Personal Projects:
       </h1>
     </AnimationOnScroll>

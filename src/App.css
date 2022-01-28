@@ -143,29 +143,34 @@ div.santaFliesContainer > img {
 .aboutPageHeader {
   display: flex;
   flex-direction: row;
+  padding-top: 1rem;
 }
 
 .selfie {
-  height: 80vh;
+  height: 75vh;
   width: 35vw;
-  padding: 55px;
-  padding-bottom: 0px;
+  /* padding: 55px; */
+
+  padding:2rem;
+  padding-bottom: 0;
 }
 
 .aboutMyself {
   color: rgb(252, 252, 252);
   background-color: rgba(155, 82, 69, 0.459);
-  padding: 15px;
+  padding: 1rem;
   font-family: Krona-One;
   font-weight: lighter;
   text-align: justify;
 }
 
 .socialLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin: 0;
-  font-size: 2rem;
+  font-size: 25%;
   padding: 0;
-   padding-left: 4rem;
   color: black
 }
 
@@ -204,11 +209,11 @@ div.projectsBox * a, div.socialLinks > a {
   font-family: Krona-One
 } */
 
-.titleMarquee2:hover {
+/* .titleMarquee2:hover {
   position: relative;
   -webkit-animation: scrolling-right1 0.8s linear;
   animation: scrolling-right1 0.8s linear;
-}
+} */
 
 @keyframes scrolling-left1 {
   0% {
@@ -281,7 +286,7 @@ div.projectsBox * a, div.socialLinks > a {
 
 
 .gradientShape2 {
-  padding-top: 65rem;
+  padding-top: 98vh;
   width: 90%;
   padding-left: 0px;
   transform: skewY(-14deg);
@@ -289,10 +294,10 @@ div.projectsBox * a, div.socialLinks > a {
 }
 
 .gradientShape3 {
-  padding-top: 150rem;
+  padding-top: 235vh;
   left: 7%;
   width: 83%;
-  height: 85rem;
+  height: 135%;
   transform: skewY(-10deg);
 }
 

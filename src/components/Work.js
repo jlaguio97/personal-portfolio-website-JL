@@ -22,7 +22,7 @@ const Work = () => (
             alt="desktop computer with XYME health app on screen"
           ></img>
 
-          <a href='https://fsa-xyme.herokuapp.com/' target='_blank' rel='noreferrer'>
+          <a className='hover-underline-animation' href='https://fsa-xyme.herokuapp.com/' target='_blank' rel='noreferrer'>
           <h1>XYME</h1></a>
 
 
@@ -45,7 +45,7 @@ const Work = () => (
             alt="homepage interface for shopping website"
           ></img>
 
-<a href='https://mm-grace-shopper.herokuapp.com/home' target='_blank' rel='noreferrer'>
+<a className='hover-underline-animation' href='https://mm-grace-shopper.herokuapp.com/home' target='_blank' rel='noreferrer'>
           <h1>GOOP for Men</h1> </a>
 
 
@@ -59,7 +59,7 @@ const Work = () => (
         <div className="santaFliesContainer">
           <img src={santaFliesDemo} alt="demo screen for Santa Flies"></img>
 
-          <a href='https://santa-flies.herokuapp.com ' target='_blank' rel='noreferrer'>
+          <a className='hover-underline-animation' href='https://santa-flies.herokuapp.com ' target='_blank' rel='noreferrer'>
           <h1>Santa Flies!</h1> </a>
           <h4 style={{ fontWeight: "lighter" }}>
             A simple game using JQuery with a festive touch. The game is a

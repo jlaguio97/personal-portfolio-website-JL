@@ -58,6 +58,11 @@ function App() {
               </div>
               {/* </Link> */}
             </div>
+
+            <Link to="work" smooth={true} duration={1000} offset={100}>
+              <img className="arrow" src={arrow} alt="arrow"></img>{" "}
+            </Link>
+
             <h6 className="personal">
               Hello, I'm a fullstack web developer based in New York City, with
               a love for UI/UX design.
@@ -83,12 +88,9 @@ function App() {
         alt="gradient shape circle"
       ></img>
 
-      <Link to="work" smooth={true} duration={1000} offset={100}>
-        <img className="arrow" src={arrow} alt="arrow"></img>{" "}
-      </Link>
-      <Link to="about" smooth={true} duration={1000}>
+      {/* <Link to="about" smooth={true} duration={1000}>
         <img className="arrow2" src={arrow} alt="arrow"></img>
-      </Link>
+      </Link> */}
 
       <Work></Work>
 

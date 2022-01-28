@@ -36,14 +36,14 @@ const About = () => (
     >
       <img src={selfie} alt="me on a roof" className="selfie"></img>
       <div className="socialLinks">
-          <a href="https://www.linkedin.com/in/jordan-laguio" target='_blank' rel='noreferrer'>
+          <a href="https://www.linkedin.com/in/jordan-laguio" target='_blank' rel='noreferrer' className='hover-underline-animation'>
             <span style={{ paddingRight: "3rem" }}>LinkedIn</span>
           </a>
 
-          <a href="https://github.com/jlaguio97" target='_blank' rel="noreferrer">
+          <a href="https://github.com/jlaguio97" target='_blank' rel="noreferrer" className='hover-underline-animation'>
             <span style={{ paddingRight: '3rem'}}>GitHub</span>{" "}
           </a>
-          <a href='mailto:jordan.laguio@gmail.com' target='_blank' rel='noreferrer'>
+          <a href='mailto:jordan.laguio@gmail.com' target='_blank' rel='noreferrer' className='hover-underline-animation'>
 
             <span>Email</span>
           </a>

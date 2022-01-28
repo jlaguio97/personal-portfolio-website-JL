@@ -59,8 +59,10 @@ function App() {
               {/* </Link> */}
             </div>
 
-            <Link to="work" smooth={true} duration={1000} offset={100}>
-              <img className="arrow" src={arrow} alt="arrow"></img>{" "}
+            <Link to="work" smooth={true} duration={1000} offset={100} >
+              <span>
+              <img className="arrow" src={arrow} alt="arrow"></img>
+              </span>
             </Link>
 
             <h6 className="personal">

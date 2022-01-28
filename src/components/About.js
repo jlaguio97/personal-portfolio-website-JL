@@ -17,9 +17,9 @@ const About = () => (
         </h1>
       </AnimationOnScroll>
       <AnimationOnScroll
-        animateIn="animate__fadeInUp"
+        animateIn="animate__fadeIn"
         animateOut="animate__fadeOutUp"
-        delay={500}
+        delay={200}
       >
         <p className="aboutMyself" style={{ fontSize: "15pt" }}>
           I'm Jordan, a 24 year old software engineer currently living in New

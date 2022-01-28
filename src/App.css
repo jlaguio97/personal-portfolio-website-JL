@@ -276,12 +276,16 @@ div.projectsBox * a, div.socialLinks > a {
   height: 3.5rem;
   position: relative;
   margin-top: 20vh;
-  padding-left: 41vw;
+  margin-left: 41vw;
   padding-right: 19vw;
   padding-bottom: 0;
   animation: jumping 1s infinite;
   -webkit-animation: jumping 1s infinite;
   width: 2rem;
+}
+
+.arrow:hover {
+  fill: white;
 }
 
 
@@ -361,6 +365,11 @@ html {
   font-family: "Helvetica Neue", Arial;
   font-size: 16px;
   font-weight: bold;
+}
+
+#circle text:hover {
+  fill: whitesmoke;
+  font-size:2rem;
 }
 
 #circle svg {

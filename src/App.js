@@ -28,15 +28,15 @@ function App() {
     <div className="App">
 <AnimationOnScroll
       animateIn='animate__fadeIn'
-      delay={200}>
+      delay={100}>
 
       <Navbar></Navbar>
 
       <h1 className="titleText">
         <FadeIn delay={850} transitionDuration={850}>
-          <div className="titleMarquee2">Creative Developer</div>
-          <div className="titleMarquee2">Web Designer</div>
-          <div className="titleMarquee2">Problem Solver</div>
+          <div className="title1" >Creative Developer</div>
+          <div className="titleMarquee2" style={{color:'#d49e8d'}}>Web Designer</div>
+          <div className="title3">Problem Solver</div>
 
           <div className="spinAndPersonal">
             <div id="container">
@@ -90,6 +90,7 @@ function App() {
         </FadeIn>
       </h1>
       </AnimationOnScroll>
+
       <img
         className="gradientShape"
         src={gradientShape7}
@@ -107,16 +108,26 @@ function App() {
         alt="gradient shape circle"
       ></img>
 
-      <Work></Work>
 
+  <AnimationOnScroll
+  animateIn='animate__fadeIn'
+  >
+
+      <Work></Work>
+      </AnimationOnScroll>
+
+      <AnimationOnScroll
+  animateIn='animate__fadeIn'
+  >
       <About></About>
+      </AnimationOnScroll>
     </div>
 
     ) : (
       <AnimationOnScroll
       animateIn = 'animate__fadeIn'
       aniamteOut='animate__fadeOut'
-      delay={100}>
+      delay={10}>
       <LoadingScreen />
       </AnimationOnScroll>
     )}

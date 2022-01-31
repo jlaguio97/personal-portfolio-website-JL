@@ -10,7 +10,7 @@ const Work = () => (
       animateIn="animate__fadeIn"
       delay={150}
     >
-      <h1 className="projectsTitle" style={{ fontSize: "10.5vw" }}>
+      <h1 className="projectsTitle" style={{ fontSize: "10.5vw", color:'#FAF6F2'}}>
         Personal Projects:
       </h1>
     </AnimationOnScroll>
@@ -50,8 +50,7 @@ const Work = () => (
 
 
           <h4 style={{ fontWeight: "lighter" }}>
-            Goop is a modern lifestyle brand, for the modern man. A luxurious
-            e-commerce website just for men.
+            Goop is a modern lifestyle brand, for the modern man. Drawing from the business mantra of Gwyeneth Paltrow's highly-revered lifestyle brand, it finds the balance between indulgence and necessity. It features several strange luxury products across multiple product categories and a functional 'shopping cart' experience. It is a single-page e-commerce website that was built with React, Express, and PostgreSql.
           </h4>
         </div>
       </AnimationOnScroll>

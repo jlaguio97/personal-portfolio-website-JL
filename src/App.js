@@ -91,11 +91,11 @@ function App() {
       </h1>
       </AnimationOnScroll>
 
-      <img
+      {/* <img
         className="gradientShape"
         src={gradientShape7}
         alt="gradient shape circle"
-      />
+      /> */}
 
       <img
         className="gradientShape2"

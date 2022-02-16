@@ -18,7 +18,7 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 6000)
+    setTimeout(() => setLoading(false), 1000)
   }, [])
 
   return (
@@ -33,26 +33,24 @@ function App() {
       <Navbar></Navbar>
 
       <h1 className="titleText">
-        <FadeIn delay={850} transitionDuration={850}>
-          <div className="title1" >Creative Developer</div>
-          <div className="titleMarquee2" style={{color:'#d49e8d'}}>Web Designer</div>
-          <div className="title3">Problem Solver</div>
+        <FadeIn delay={650} transitionDuration={850}>
+          <div className="title1"  style={{color:'black'}}>Creative Developer</div>
+          <div className="titleMarquee" style={{color:'#d49e8d'}}>Web Designer</div>
+          <div className="title3" style={{color:'black'}}>Problem Solver</div>
 
           <div className="spinAndPersonal">
             <div id="container">
-              {/* <Link to="contact" smooth={true} duration={1300}> */}
               <div id="circle">
                 <a href="mailto:jordan.laguio@gmail.com">
                   <svg
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    width="300px"
-                    height="300px"
+                     x="0px"
+                     y="0px"
+                     width="100%"
                     viewBox="0 0 300 300"
-                    enable-background="new 0 0 300 300"
+                    enableBackground="new 0 0 300 300"
                     xmlSpace="preserve"
                   >
                     <defs>
@@ -102,11 +100,11 @@ function App() {
         src={gradientShape23}
         alt="gradient shape circle"
       />
-      <img
+      {/* <img
         className="gradientShape3"
         src={gradientShape3}
         alt="gradient shape circle"
-      ></img>
+      ></img> */}
 
 
   <AnimationOnScroll

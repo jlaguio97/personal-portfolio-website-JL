@@ -21,7 +21,7 @@ const About = () => (
         animateOut="animate__fadeOutUp"
         delay={200}
       >
-        <p className="aboutMyself" style={{ fontSize: "15pt" }}>
+        <p className="aboutMyself" >
           I'm Jordan, a 24 year old software engineer currently living in New
           York City. I have a strong love for fashion, visual art, and travel.
           Prior to my transition into tech, I was a stylist at Marni. When I'm

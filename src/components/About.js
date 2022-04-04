@@ -10,7 +10,7 @@ const About = () => (
       <AnimationOnScroll
         animateIn="animate__fadeInLeft"
         animateOut="animate__fadeOutLeft"
-        delay={400}
+        delay={200}
       >
         <h1 className="aboutPageTitle" style={{ fontSize: "120%" }}>
           A little bit about myself...

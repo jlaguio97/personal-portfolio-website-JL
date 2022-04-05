@@ -13,7 +13,6 @@ import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -21,29 +20,30 @@ function App() {
     setTimeout(() => setLoading(false), 1000);
   }, []);
 
-
-
   return (
     <>
       {loading === false ? (
-        <div className="App" >
+        <div className="App">
           <AnimationOnScroll animateIn="animate__fadeIn" delay={100}>
             <Navbar></Navbar>
 
             <h1 className="titleText">
               <FadeIn delay={190} transitionDuration={900}>
-                <div className="title1" style={{ color: "black"}}>
+                <div className="title1" style={{ color: "black" }}>
                   Creative Developer /
                 </div>
-                <div className="titleMarquee" style={{ color: "#d49e8d", textDecoration: 'underline' }}>
+                <div
+                  className="titleMarquee"
+                  style={{ color: "#d49e8d", textDecoration: "underline" }}
+                >
                   Web Designer /
                 </div>
                 <div className="title3" style={{ color: "black" }}>
                   Problem Solver
                 </div>
-                </FadeIn>
+              </FadeIn>
 
-                <FadeIn delay={700} transitionDuration={1700}>
+              <FadeIn delay={700} transitionDuration={1700}>
                 <div className="spinAndPersonal">
                   <div id="container">
                     <div id="circle">
@@ -86,11 +86,11 @@ function App() {
                   </Link>
 
                   <h6 className="personal">
-                    Fullstack software engineer based in New York City,
-                    with a love for UI/UX design.
+                    Fullstack software engineer based in New York City, with a
+                    love for UI/UX design.
                   </h6>
                 </div>
-                </FadeIn>
+              </FadeIn>
             </h1>
           </AnimationOnScroll>
 
@@ -111,7 +111,12 @@ function App() {
         alt="gradient shape circle"
       ></img> */}
 
-          <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate_fadeOut' delay={700} duration={2.9}>
+          <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate_fadeOut"
+            delay={700}
+            duration={2.9}
+          >
             <Work></Work>
           </AnimationOnScroll>
 
@@ -125,7 +130,7 @@ function App() {
         //   aniamteOut="animate__fadeOut"
         //   delay={10}
         // >
-          <LoadingScreen />
+        <LoadingScreen />
         // </AnimationOnScroll>
       )}
     </>

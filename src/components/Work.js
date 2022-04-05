@@ -24,7 +24,7 @@ const Work = function () {
       {/* </AnimationOnScroll> */}
       <div className="projectsBox" ref={ref}>
         {/* <AnimationOnScroll animateIn="animate__fadeIn"> */}
-        <span style={{ height: "1700px" }}>
+        <span style={{ height: "1300px" }}>
           <div className="xymeContainer">
             <img
               src={xymeDemo}
@@ -65,7 +65,7 @@ const Work = function () {
         </span>
         {/* </AnimationOnScroll> */}
         {/* <AnimationOnScroll animateIn="animate__fadeIn"> */}
-        <span style={{ height: "1700px" }}>
+        <span style={{ height: "1300px" }}>
           <div className="goopMenContainer">
             <img
               src={goopDemo}

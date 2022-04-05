@@ -1,16 +1,16 @@
 .App {
   text-align: center;
   display: grid;
-  font-family:  'VarentGrotesk-Bold', Helvetica;
+  font-family: Helvetica;
 }
 
 @font-face {
-  font-family: "VarentGrotesk-Bold";
+   font-family: "VarentGrotesk-Bold";
   src: url(../../../Library/Fonts/VarentGrotesk-Bold.otf);
-  font-family: "Krona-One";
+   font-family: "Krona-One";
   src: url(../../../Library/Fonts/KronaOne-Regular.ttf);
-  /* font-family: 'NeutralFace-Bold';
-  src: url(../../../Library/Fonts/NeutralFace-Bold.otf) */
+   font-family: 'NeutralFace-Bold';
+  src: url(../../../Library/Fonts/NeutralFace-Bold.otf)
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -27,7 +27,7 @@
 .navBarHeader {
   font-size: 16rem;
   font-weight: bold;
-  font-family: 'Krona-One';
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
   font-size: small;
@@ -57,10 +57,19 @@
   width: 90vw;
 }
 
+.workPageParentContainer {
+  width:100%;
+  margin-left: 0;
+}
+
+.titleText {
+  font-weight: normal;
+}
+
 .personal {
   border-top: 2px solid black;
   padding-top: 15rem;
-  font-size: 1rem;
+  font-size: 3.2vh;
   padding: 2rem;
   padding-bottom: 9.5vh;
   color: white;
@@ -68,11 +77,12 @@
   background: url(./shapes/11.png);
   background-size: cover;
   height: 10vh;
-  text-align: justify;
-  font-family: Krona-One;
-  font-weight: lighter;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
   margin:0;
   margin-top: 6vh;
+  word-spacing: 0px
 }
 
 .spinAndPersonal {
@@ -86,28 +96,43 @@
   padding-right: 0;
   padding-top: 0rem;
   color: rgb(5, 5, 5);
+  border: none
 }
 
 .projectsTitle {
-  border-bottom: 4px dashed white;
-  color: rgb(255, 255, 255);
+  border-bottom: 2px solid black;
+  color: black;
   padding-right: 0;
   width: 88vw;
+  font-size: 7vw;
+  font-weight: normal;
+  letter-spacing: 0.1px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  /* color:#FAF6F2 */
 }
 
 .projectsBox {
   display: flex;
-  flex-direction: row;
-
+  flex-direction: column;
   justify-content: space-around;
   margin: 0;
   padding-bottom: 3rem;
   font-size: 1rem;
   text-align: justify;
-  color: whitesmoke;
-  font-family: Krona-One;
-  width: 88vw
+  color: black;
+  /* font-family: Krona-One; */
+  width: 88vw;
 }
+
+.projectsDetails {
+  margin: 2rem
+}
+
 @media only screen and (max-width: 420px) {
   .projectsBox {
     flex-wrap: wrap;
@@ -115,14 +140,41 @@
   .spinAndPersonal {
     flex-wrap: wrap
   }
+  .titleText {
+    width: 100%;
+    margin-left: 2.5rem;
+  }
+}
+
+.xymeContainer, .goopMenContainer, .santaFliesContainer {
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem
 }
 
 .xymeContainer {
-  padding-right: 1rem;
+  position: sticky;
+  top: 22%;
+  padding-top: 5rem;
+  margin-bottom:5vh
+}
+
+.goopMenContainer {
+  position: sticky;
+  top: 22%;
+  margin-top: 10vh;
 }
 
 .santaFliesContainer {
   padding-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 22%;
+  margin-top:10vh;
+  margin-bottom:5vh;
+
 }
 
 /* .xymeContainer:hover {
@@ -130,17 +182,17 @@
 } */
 
 div.xymeContainer > img {
-  width: 100%;
+  width: 50%;
   border-radius: 2%;
 }
 
 div.goopMenContainer > img {
-  width: 28vw;
+  width: 50%;
   border-radius: 2%;
 }
 
 div.santaFliesContainer > img {
-  width: 29vw;
+  width: 82vw;
   border-radius: 2%;
 }
 
@@ -150,12 +202,20 @@ div.santaFliesContainer > img {
   padding-top: 1rem;
 }
 
+.aboutPageTitle {
+  font-weight: lighter;
+  color: black
+}
+
 @media only screen and (max-width:420px) {
   .aboutPageHeader {
     flex-wrap: wrap;
+    width: 100%;
+    margin: 0rem;
+    margin-left: 2.5rem;
   }
   .aboutMyself {
-    font-size: 0.7rem;
+    font-size: 0.4rem;
     margin-right: 1rem;
   }
 }
@@ -190,19 +250,22 @@ div.santaFliesContainer > img {
 }
 
 .aboutMyself {
-  color: rgb(252, 252, 252);
-  background-color: rgba(155, 82, 69, 0.459);
+  color: black;
+
   padding: 1rem;
-  font-family: Krona-One;
-  font-weight: lighter;
+
+  font-weight: normal;
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  word-spacing: 1px;
+  line-height: 38px;
+
 }
 
 
 
 div.projectsBox * a, div.socialLinks > a {
-  font-family: Krona-One;
+  /* font-family: Krona-One; */
   text-decoration: none;
   color: inherit
 }
@@ -217,44 +280,61 @@ div.projectsBox * a, div.socialLinks > a {
 } */
 
 
-.goopMenContainer {
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  padding-left: 15px;
+/* .goopMenContainer {
+  /* border-left: 2px solid black;
+  border-right: 2px solid black; */
+  /* padding-left: 15px;
   padding-right: 15px;
-}
+} */
 
 @media only screen and (max-width:420px) {
+
   .goopMenContainer {
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    flex-direction: column;
+    width: 100%;
+    position: inherit
   }
   .xymeContainer {
     border-bottom:
-      2px solid white;
-      padding-left: 1rem;
+      2px solid black;
+    flex-direction: column;
+    width: 100%;
+    position: inherit;
+    margin-top: 40px
   }
   div.goopMenContainer > img {
-    width: 80vw;
+    width: 100vw;
+    height: 40vh;
     border-radius: 2%;
   }
   div.santaFliesContainer > img {
-    width: 80vw;
+    width: 100vw;
+    height: 40vh
   }
   .santaFliesContainer {
-    padding-right: 1rem;
-
+    flex-direction: column;
+    width: 100%;
+    position: inherit;
+  }
+  div.xymeContainer > img {
+    width: 100vw;
+    height: 40vh
+  }
+  .projectsTitle {
+    position: inherit
   }
 }
 
- .titleMarquee {
+ /* .titleMarquee {
   position: relative;
   -webkit-animation: scrolling-left1 20s linear infinite;
   animation: scrolling-left1 20s linear infinite;
-}
+} */
 
 /* .titleMarquee {
   color: transparent;

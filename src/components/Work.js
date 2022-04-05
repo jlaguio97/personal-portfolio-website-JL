@@ -49,7 +49,7 @@ const Work = function () {
                 </a>
               </h1>
 
-              <h4 style={{ fontWeight: "lighter" }}>
+              <h4 style={{ fontWeight: "lighter", fontSize: "larger" }}>
                 A mobile web-application that keeps a digital wallet of your
                 medications. With xyme you can read about vital drug
                 interactions to understand which medications should not be taken
@@ -92,7 +92,7 @@ const Work = function () {
                 </a>
               </h1>
 
-              <h4 style={{ fontWeight: "lighter" }}>
+              <h4 style={{ fontWeight: "lighter", fontSize: "larger" }}>
                 Goop is a modern lifestyle brand, for the modern man. Drawing
                 from the business mantra of Gwyeneth Paltrow's highly-revered
                 lifestyle brand, it finds the balance between indulgence and
@@ -127,7 +127,7 @@ const Work = function () {
                 </a>{" "}
               </h1>
 
-              <h4 style={{ fontWeight: "lighter" }}>
+              <h4 style={{ fontWeight: "lighter", fontSize: "larger" }}>
                 A simple game using JQuery with a festive touch. The game is a
                 flappy-bird clone reskinned as Santa. It uses local storange to
                 save the high score and the user can play the game as many times

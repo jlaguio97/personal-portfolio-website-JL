@@ -33,10 +33,10 @@ function App() {
             <h1 className="titleText">
               <FadeIn delay={190} transitionDuration={900}>
                 <div className="title1" style={{ color: "black"}}>
-                  Creative Developer
+                  Creative Developer /
                 </div>
-                <div className="titleMarquee" style={{ color: "#d49e8d" }}>
-                  Web Designer
+                <div className="titleMarquee" style={{ color: "#d49e8d", textDecoration: 'underline' }}>
+                  Web Designer /
                 </div>
                 <div className="title3" style={{ color: "black" }}>
                   Problem Solver

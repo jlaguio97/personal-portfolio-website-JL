@@ -5,12 +5,12 @@
 }
 
 @font-face {
-   font-family: "VarentGrotesk-Bold";
+  font-family: "VarentGrotesk-Bold";
   src: url(../../../Library/Fonts/VarentGrotesk-Bold.otf);
-   font-family: "Krona-One";
+  font-family: "Krona-One";
   src: url(../../../Library/Fonts/KronaOne-Regular.ttf);
-   font-family: 'NeutralFace-Bold';
-  src: url(../../../Library/Fonts/NeutralFace-Bold.otf)
+  font-family: "NeutralFace-Bold";
+  src: url(../../../Library/Fonts/NeutralFace-Bold.otf);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -20,8 +20,7 @@
 }
 
 .loader {
-  transform: scale(1.50);
-
+  transform: scale(1.5);
 }
 
 .navBarHeader {
@@ -34,7 +33,7 @@
   border-bottom: 2px solid rgb(7, 7, 7);
   border-right: 2px solid rgb(7, 7, 7);
   position: sticky;
-  max-width: 35rem
+  max-width: 35rem;
 }
 
 .navBarText:hover {
@@ -53,12 +52,12 @@
   font-size: 8vw;
   text-align: left;
   padding-left: 3%;
-  color: #FAF6F2;
+  color: #faf6f2;
   width: 90vw;
 }
 
 .workPageParentContainer {
-  width:100%;
+  width: 100%;
   margin-left: 0;
 }
 
@@ -80,9 +79,9 @@
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
-  margin:0;
+  margin: 0;
   margin-top: 6vh;
-  word-spacing: 0px
+  word-spacing: 0px;
 }
 
 .spinAndPersonal {
@@ -96,7 +95,7 @@
   padding-right: 0;
   padding-top: 0rem;
   color: rgb(5, 5, 5);
-  border: none
+  border: none;
 }
 
 .projectsTitle {
@@ -130,7 +129,7 @@
 }
 
 .projectsDetails {
-  margin: 2rem
+  margin: 2rem;
 }
 
 @media only screen and (max-width: 420px) {
@@ -138,7 +137,7 @@
     flex-wrap: wrap;
   }
   .spinAndPersonal {
-    flex-wrap: wrap
+    flex-wrap: wrap;
   }
   .titleText {
     width: 100%;
@@ -146,18 +145,20 @@
   }
 }
 
-.xymeContainer, .goopMenContainer, .santaFliesContainer {
+.xymeContainer,
+.goopMenContainer,
+.santaFliesContainer {
   padding-right: 1rem;
   display: flex;
   flex-direction: row;
-  margin: 1rem
+  margin: 1rem;
 }
 
 .xymeContainer {
   position: sticky;
   top: 22%;
   padding-top: 5rem;
-  margin-bottom:5vh
+  margin-bottom: 5vh;
 }
 
 .goopMenContainer {
@@ -172,9 +173,8 @@
   flex-direction: row;
   position: sticky;
   top: 22%;
-  margin-top:10vh;
-  margin-bottom:5vh;
-
+  margin-top: 10vh;
+  margin-bottom: 5vh;
 }
 
 /* .xymeContainer:hover {
@@ -203,11 +203,11 @@ div.santaFliesContainer > img {
 }
 
 .aboutPageTitle {
-  font-weight: lighter;
-  color: black
+  font-weight: normal;
+  color: black;
 }
 
-@media only screen and (max-width:420px) {
+@media only screen and (max-width: 420px) {
   .aboutPageHeader {
     flex-wrap: wrap;
     width: 100%;
@@ -235,13 +235,13 @@ div.santaFliesContainer > img {
   margin: 0;
   font-size: 28%;
   padding: 0;
-  color: black
+  color: black;
 }
 
 @media only screen and (max-width: 420px) {
   .selfie {
     height: 70%;
-    width: 70%
+    width: 70%;
   }
   .socialLinks {
     margin-bottom: 3rem;
@@ -254,23 +254,21 @@ div.santaFliesContainer > img {
 
   padding: 1rem;
 
-  font-weight: normal;
+  font-weight: bold;
   text-align: justify;
   font-size: 1.6rem;
   word-spacing: 1px;
   line-height: 38px;
-
 }
 
-
-
-div.projectsBox * a, div.socialLinks > a {
+div.projectsBox * a,
+div.socialLinks > a {
   /* font-family: Krona-One; */
   text-decoration: none;
-  color: inherit
+  color: inherit;
 }
 
- div.socialLinks > a:hover {
+div.socialLinks > a:hover {
   font-style: underline;
   color: whitesmoke;
 }
@@ -279,16 +277,14 @@ div.projectsBox * a, div.socialLinks > a {
   max-width: 15vw
 } */
 
-
 /* .goopMenContainer {
   /* border-left: 2px solid black;
   border-right: 2px solid black; */
-  /* padding-left: 15px;
+/* padding-left: 15px;
   padding-right: 15px;
 } */
 
-@media only screen and (max-width:420px) {
-
+@media only screen and (max-width: 420px) {
   .goopMenContainer {
     border-left: none;
     border-right: none;
@@ -297,15 +293,14 @@ div.projectsBox * a, div.socialLinks > a {
     margin-top: 2rem;
     flex-direction: column;
     width: 100%;
-    position: inherit
+    position: inherit;
   }
   .xymeContainer {
-    border-bottom:
-      2px solid black;
+    border-bottom: 2px solid black;
     flex-direction: column;
     width: 100%;
     position: inherit;
-    margin-top: 40px
+    margin-top: 40px;
   }
   div.goopMenContainer > img {
     width: 100vw;
@@ -314,7 +309,7 @@ div.projectsBox * a, div.socialLinks > a {
   }
   div.santaFliesContainer > img {
     width: 100vw;
-    height: 40vh
+    height: 40vh;
   }
   .santaFliesContainer {
     flex-direction: column;
@@ -323,16 +318,16 @@ div.projectsBox * a, div.socialLinks > a {
   }
   div.xymeContainer > img {
     width: 100vw;
-    height: 40vh
+    height: 40vh;
   }
   .projectsTitle {
-    position: inherit
+    position: inherit;
   }
 }
 
- /* .titleMarquee {
+/* .titleMarquee {
   position: relative;
-  -webkit-animation: scrolling-left1 20s linear infinite;
+  -webkit-animation: scrolling-left1 2s linear infinite;
   animation: scrolling-left1 20s linear infinite;
 } */
 
@@ -342,7 +337,7 @@ div.projectsBox * a, div.socialLinks > a {
   font-family: Krona-One
 } */
 
- .titleMarquee2:hover {
+.titleMarquee2:hover {
   position: relative;
   -webkit-animation: scrolling-right1 0.8s linear;
   animation: scrolling-right1 0.8s linear;
@@ -354,8 +349,8 @@ div.projectsBox * a, div.socialLinks > a {
     -webkit-transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
+    transform: translateX(-90%);
+    -webkit-transform: translateX(-90%);
   }
 }
 
@@ -418,13 +413,11 @@ div.projectsBox * a, div.socialLinks > a {
 }
 
 @media only screen and (max-width: 420px) {
-  .arrow, .arrow2 {
+  .arrow,
+  .arrow2 {
     margin-left: 70vw;
   }
 }
-
-
-
 
 .gradientShape2 {
   padding-top: 98vh;
@@ -465,11 +458,11 @@ html {
 }
 
 .title1 {
-  color: white
+  color: white;
 }
 
 .title3 {
-  color: rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
 }
 
 .contactWheel {
@@ -514,11 +507,11 @@ html {
 
 #circle text:hover {
   fill: whitesmoke;
-  font-size:2rem;
+  font-size: 2rem;
 }
 
 #circle svg {
-  position:absolute;
+  position: absolute;
   left: 0;
   top: 5rem;
   height: 12rem;
@@ -594,7 +587,7 @@ html {
 }
 
 .hover-underline-animation:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
